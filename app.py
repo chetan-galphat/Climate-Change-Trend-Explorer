@@ -119,8 +119,8 @@ def page_home():
             <ul class="hero-list">
                 <li>Time-series trends for key climate indicators</li>
                 <li>Correlations between CO₂, sea level, forests & renewables</li>
-                <li>Simple ML forecasts & what-if scenarios</li>
-                <li>Insights & actions powered by data science</li>
+                <li>Machine Learning forecasts for future metrics</li>
+                <li>Data-driven insights & climate action resources</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -373,4 +373,5 @@ def main():
     pages[st.session_state.navigation]()
 
 if __name__ == "__main__":
+
     main()
