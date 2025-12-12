@@ -139,7 +139,7 @@ def page_home():
     with c2:
         with st.container(border=True):
             st.subheader("🔗 Relationships")
-            st.write("Visualize correlation b/w any 2 climate variable to uncover hidden patterns.")
+            st.write("Visualize correlations between any two climate variables.")
             if st.button("Open Relationships →", key="btn_rel"):
                 navigate_to("Relationships")
 
@@ -375,5 +375,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
