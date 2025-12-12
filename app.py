@@ -107,9 +107,9 @@ def page_home():
         st.markdown("""
         ### 🌍 Global Climate Dashboard
         
-        Explore how **CO₂ emissions**, **sea level**, **forest area**, **renewables**, and **population** are changing over time – and how they are related.
+        Explore how **CO₂ emissions**, **sea level**, **forest area**, **renewables**, **precipitation**, and **population** are changing over time – and how they are related.
         
-        Use this dashboard to visualize trends, discover relationships, see simple forecasts, and learn how data science supports climate action.
+        Use this dashboard to visualize trends, discover relationships, see simple forecasts, and explore data-driven insights for climate action.
         """)
     
     with col2:
@@ -139,14 +139,14 @@ def page_home():
     with c2:
         with st.container(border=True):
             st.subheader("🔗 Relationships")
-            st.write("Explore how CO₂ relates to sea level, forest loss, and renewables.")
+            st.write("Visualize correlations between any two climate variables to uncover hidden patterns.")
             if st.button("Open Relationships →", key="btn_rel"):
                 navigate_to("Relationships")
 
     with c3:
         with st.container(border=True):
             st.subheader("🔮 Predictions")
-            st.write("View simple forecasts for emissions and sea level.")
+            st.write("Train Machine Learning models to forecast future climate trends.")
             if st.button("Open Predictions →", key="btn_pred"):
                 navigate_to("Predictions")
 
@@ -375,3 +375,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
